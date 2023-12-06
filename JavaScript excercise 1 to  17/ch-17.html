@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 17 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 17 Arrays: Removing, inserting,and extracting elements//
+        //Example 1: Removing Elements by Index
+
+        // Creating an array
+        var fruits = ['Apple', 'Banana', 'Orange', 'Grapes'];
+
+        // Removing an element by index
+        var removedFruit = fruits.splice(2, 1); // Removes 1 element starting from index 2
+
+        console.log("Removed:", removedFruit); // Output: ['Orange']
+        console.log("Updated array:", fruits); // Output: ['Apple', 'Banana', 'Grapes']
+
+
+        //EExample 2: Inserting Elements at a Specific Index
+        // Inserting elements at a specific index
+        fruits.splice(1, 0, 'Mango', 'Pineapple'); // Inserts 'Mango' and 'Pineapple' at index 1
+
+        console.log("Updated array:", fruits); // Output: ['Apple', 'Mango', 'Pineapple', 'Banana', 'Grapes']
+
+
+        // Exercise Solution
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'];
+
+        // Remove the last two months
+        months.splice(-2, 2);
+
+        // Insert 'November' and 'December'
+        months.push('November', 'December');
+
+        // Extract months from February to June
+        var springMonths = months.slice(1, 6);
+
+        // Print the final array
+        console.log("Final array:", months);
+        console.log("Spring months:", springMonths);
+
+    </script>
+</body>
+
+</html>

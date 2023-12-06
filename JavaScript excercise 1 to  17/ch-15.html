@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 15 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 15 Arrays//
+        //Example 1: Creating an Array
+        // Creating an array of numbers
+
+        var numbers = [1, 2, 3, 4, 5];
+
+        // Accessing elements in the array
+        console.log(numbers[0]); // Output: 1
+        console.log(numbers[2]); // Output: 3
+
+        // Modifying an element in the array
+        numbers[1] = 10;
+        console.log(numbers); // Output: [1, 10, 3, 4, 5]
+
+        // Array length
+        console.log(numbers.length); // Output: 5
+
+
+        //Example 2: Iterating Over an Array
+        // Iterating over elements in an array
+        var fruits = ['Apple', 'Banana', 'Orange'];
+
+        for (var i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+        // Output:
+        // Apple
+        // Banana
+        // Orange
+
+        // Exercise Solution
+        var colors = ['Red', 'Green', 'Blue'];
+
+        // Adding two more colors
+        colors.push('Yellow', 'Purple');
+
+        // Printing the length of the array
+        console.log("Length of colors array:", colors.length);
+
+        // Iterating over the array and printing each color
+        console.log("Colors in the array:");
+        for (var i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

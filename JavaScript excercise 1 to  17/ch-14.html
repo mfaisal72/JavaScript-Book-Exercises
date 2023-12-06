@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 14 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 14 if statements nested//
+        //Example 1: Nested if Statements
+        var isRaining = true;
+        var hasUmbrella = true;
+
+        if (isRaining) {
+            console.log("It's raining.");
+
+            if (hasUmbrella) {
+                console.log("You can go outside with an umbrella.");
+            } else {
+                console.log("Better stay indoors.");
+            }
+        } else {
+            console.log("It's not raining. Enjoy the weather!");
+        }
+
+
+        //Example 2: More Complex Nesting
+        var isWeekend = true;
+        var time = "morning";
+
+        if (isWeekend) {
+            console.log("It's the weekend!");
+
+            if (time === "morning") {
+                console.log("Good morning!");
+            } else if (time === "afternoon") {
+                console.log("Good afternoon!");
+            } else {
+                console.log("Good evening!");
+            }
+        } else {
+            console.log("It's a weekday. Keep working!");
+        }
+
+        // Exercise Solution
+        var age = 16;
+
+        if (age >= 18) {
+            console.log("You are eligible for a driver's license.");
+        } else {
+            console.log("You are not eligible for a driver's license.");
+
+            if (age === 16 || age === 17) {
+                console.log("You can get a learnerning license.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

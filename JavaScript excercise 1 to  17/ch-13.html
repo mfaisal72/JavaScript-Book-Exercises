@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 13 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 13 Testing sets of conditions//
+        // Example 1: Using Logical AND (&&)
+        var age = 25;
+        var hasLicense = true;
+
+        if (age >= 18 && hasLicense) {
+            console.log("You can drive.");
+        } else {
+            console.log("You can not drive.");
+        }
+
+        // Example 2: Using Logical OR (||)
+        var day = "Saturday";
+
+        if (day === "Saturday" || day === "Sunday") {
+            console.log("It's the weekend!");
+        } else {
+            console.log("It's a weekday.");
+        }
+
+
+        // Exercise Solution
+        var isStudent = true;
+        var ageOfPerson = 16;
+        var hasStudentID = true;
+
+        if (isStudent && ageOfPerson >= 13 && ageOfPerson <= 19 && hasStudentID) {
+            console.log("You are eligible for a CNIC CARD!");
+        } else {
+            console.log("You are not eligible for a CNIC.");
+        }
+
+
+    </script>
+</body>
+
+</html>

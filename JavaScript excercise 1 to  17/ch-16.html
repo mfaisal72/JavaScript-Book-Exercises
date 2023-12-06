@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 16 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 16 Arrays: Adding and removing elements//
+        //Example 1: Adding Elements to an Array
+        // Creating an array
+        
+        var fruits = ['Apple', 'Banana', 'Orange'];
+
+        // Adding an element to the end of the array
+        fruits.push('Grapes');
+
+        // Adding an element to the beginning of the array
+        fruits.unshift('Strawberry');
+
+        console.log(fruits); // Output: ['Strawberry', 'Apple', 'Banana', 'Orange', 'Grapes']
+
+
+        // Exercise Solution
+        var cities = ['New York', 'London', 'Tokyo'];
+
+        // Adding two more cities
+        cities.push('Paris', 'Sydney');
+
+        // Printing the updated array
+        console.log("Updated array:", cities);
+
+        // Removing the first city
+        cities.shift();
+
+        // Removing the last city
+        cities.pop();
+
+        // Printing the final array
+        console.log("Final array:", cities);
+
+
+    </script>
+</body>
+
+</html>

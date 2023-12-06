@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 6 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 6 Math expressions: Unfamiliar operators //
+        // Example 1: Exponentiation ('**')
+        var result = 2 ** 3;
+        console.log("2^3:", result); // Output: 8
+
+
+        // Example 2: Increment ('++') and Decrement ('--')
+        var count = 5;
+        count++;
+        console.log("Incremented:", count); // Output: 6
+
+        count--;
+        console.log("Decremented:", count); // Output: 5
+
+
+        // Example 3: Assignment with Addition ('+=') and Subtraction ('-=')
+        var total = 10;
+        total += 5;
+        console.log("Total after addition:", total); // Output: 15
+
+        total -= 3;
+        console.log("Total after subtraction:", total); // Output: 12
+
+
+        // Example 4: Remainder Assignment ('%=')
+        var number = 17;
+        number %= 5;
+        console.log("Remainder after division by 5:", number); // Output: 2
+
+
+        // Exercise Solution
+        // 1. Calculate the square of a number
+        var baseNumber = 4;
+        var squareUsingPow = Math.pow(baseNumber, 2);
+        var squareUsingOperator = baseNumber ** 2;
+        console.log("Square using Math.pow:", squareUsingPow);
+        console.log("Square using ** operator:", squareUsingOperator);
+
+        // 2. Increment and decrement operators
+        var count = 10;
+        count++;
+        console.log("Incremented count:", count);
+
+        count--;
+        console.log("Decremented count:", count);
+
+        // 3. Calculate the area of a square
+        var sideLength = 6;
+        var area = 0;
+
+        // Using assignment operators
+        area += sideLength * sideLength;
+        console.log("Area using += and *=", area);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 9 JAVASCRIPT</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 9 Prompts
+
+        var userInput = prompt("Enter your name:");
+        console.log("Hello, " + userInput + "!");
+
+
+        var userAge = prompt("Enter your age:");
+
+        // Convert the userAge to a number
+        userAge = parseInt(userAge);
+
+        if (userAge < 18) {
+            alert("You are a minor.");
+        } else if (userAge < 65) {
+            alert("You are an adult.");
+        } else {
+            alert("You are a senior citizen.");
+        }
+
+
+    </script>
+</body>
+
+</html>
